@@ -10,13 +10,16 @@
             margin: 20px;
         }
         .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         .session {
             border: 1px solid #ddd;
             padding: 15px;
+            margin-bottom: 10px;
+            width: calc(50% - 10px); /* Adjust the width for two columns with some gap */
+            box-sizing: border-box;
         }
         .session h2 {
             margin-top: 0;
