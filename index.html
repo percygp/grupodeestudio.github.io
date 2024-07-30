@@ -10,13 +10,14 @@
             margin: 20px;
         }
         .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 10px;
         }
         .session {
             border: 1px solid #ddd;
             padding: 15px;
+            width: calc(50% - 10px); /* Adjust width to fit two columns with gap */
             box-sizing: border-box;
         }
         .session h2 {
